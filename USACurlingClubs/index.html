@@ -35,17 +35,17 @@
 
       <div id="collapse1" class="panel-collapse collapse">
         <ul class="list-group">
-          <a class="list-group-item Alaska" href="#" onclick="map.panTo([50.5, 30.5])">Alaska Curling Association</a>
-          <a class="list-group-item" href="#">At-Large Curling Association</a>
-          <a class="list-group-item" href="#">Colorado Curling Association</a>
-          <a class="list-group-item" href="#">Grand National Curling Club</a>
-          <a class="list-group-item" href="#">Illinois Curling Association</a>
-          <a class="list-group-item" href="#">Mid America Curling Association</a>
-          <a class="list-group-item" href="#">Minnesota Curling Association</a>
-          <a class="list-group-item" href="#">Mountain Pacific Curling Association</a>
-          <a class="list-group-item" href="#">North Dakota Curling Association</a>
-          <a class="list-group-item" href="#">Washington Curling Association</a>
-          <a class="list-group-item" href="#">Wisconsin Curling Association</a>
+          <a id="AlaskaCurling" class="list-group-item">Alaska Curling Association</a>
+          <a id="At-Large" class="list-group-item">At-Large Curling Association</a>
+          <a id="ColCurling" class="list-group-item">Colorado Curling Association</a>
+          <a id="GNCC" class="list-group-item">Grand National Curling Club</a>
+          <a id="IllinoisCurling" class="list-group-item">Illinois Curling Association</a>
+          <a id="MidAmerica" class="list-group-item">Mid America Curling Association</a>
+          <a id="MinnCurling"class="list-group-item">Minnesota Curling Association</a>
+          <a id="Mopac" class="list-group-item">Mountain Pacific Curling Association</a>
+          <a id="Nodak" class="list-group-item">North Dakota Curling Association</a>
+          <a id="WashCurling" class="list-group-item">Washington Curling Association</a>
+          <a id="WiscCurling" class="list-group-item">Wisconsin Curling Association</a>
         </ul>
       </div>
         <div class="panel-heading">
@@ -133,6 +133,61 @@
           // now, perform any operations you need
           // map.setZoom(3);
           // map.panTo([50.5, 30.5]);
+          $("#AlaskaCurling").click(function(){
+            map.panTo([65,220]);
+            map.setZoom(4);
+          });
+
+          $("#At-Large").click(function(){
+            map.panTo([40,260]);
+            map.setZoom(4);
+          });
+
+          $("#ColCurling").click(function(){
+            map.panTo([42,255]);
+            map.setZoom(6);
+          });
+
+          $("#GNCC").click(function(){
+            map.panTo([38,290]);
+            map.setZoom(5);
+          });
+
+          $("#IllinoisCurling").click(function(){
+            map.panTo([41,270]);
+            map.setZoom(7);
+          });
+
+          $("#MidAmerica").click(function(){
+            map.panTo([35,265]);
+            map.setZoom(5);
+          });
+
+          $("#MinnCurling").click(function(){
+            map.panTo([46.5,265]);
+            map.setZoom(7);
+          });
+
+          $("#Mopac").click(function(){
+            map.panTo([41,240]);
+            map.setZoom(5);
+          });
+
+          $("#Nodak").click(function(){
+            map.panTo([46.5,260]);
+            map.setZoom(7);
+          });
+
+          $("#WashCurling").click(function(){
+            map.panTo([47.7,240]);
+            map.setZoom(7);
+          });
+
+          $("#WiscCurling").click(function(){
+            map.panTo([45,270]);
+            map.setZoom(7);
+          });
+
         })
         .error(function(err) {
           console.log(err);
