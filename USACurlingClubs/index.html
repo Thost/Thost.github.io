@@ -13,9 +13,9 @@
 
   <style>
    html, body, #map {
-     height: 90%;
+     height: 100%;
      padding: 0;
-     margin: 5;
+     margin: 0;
    }
  </style>
 
@@ -35,19 +35,20 @@
 
       <div id="collapse1" class="panel-collapse collapse">
         <ul class="list-group">
-          <a id="AlaskaCurling" class="list-group-item">Alaska Curling Association</a>
-          <a id="At-Large" class="list-group-item">At-Large Curling Association</a>
-          <a id="ColCurling" class="list-group-item">Colorado Curling Association</a>
-          <a id="GNCC" class="list-group-item">Grand National Curling Club</a>
-          <a id="IllinoisCurling" class="list-group-item">Illinois Curling Association</a>
-          <a id="MidAmerica" class="list-group-item">Mid America Curling Association</a>
-          <a id="MinnCurling"class="list-group-item">Minnesota Curling Association</a>
-          <a id="Mopac" class="list-group-item">Mountain Pacific Curling Association</a>
-          <a id="Nodak" class="list-group-item">North Dakota Curling Association</a>
-          <a id="WashCurling" class="list-group-item">Washington Curling Association</a>
-          <a id="WiscCurling" class="list-group-item">Wisconsin Curling Association</a>
+          <a id="AlaskaCurling" data-toggle="popover" data-content="" class="list-group-item">Alaska Curling Association</a>
+          <a id="At-Large" data-toggle="popover" data-content=""class="list-group-item">At-Large Curling Association</a>
+          <a id="ColCurling" data-toggle="popover" data-content="" class="list-group-item">Colorado Curling Association</a>
+          <a id="GNCC" data-toggle="popover" data-content="" class="list-group-item">Grand National Curling Club</a>
+          <a id="IllinoisCurling" data-toggle="popover" data-content="" class="list-group-item">Illinois Curling Association</a>
+          <a id="MidAmerica" data-toggle="popover" data-content="" class="list-group-item">Mid America Curling Association</a>
+          <a id="MinnCurling" data-toggle="popover" data-content="" class="list-group-item">Minnesota Curling Association</a>
+          <a id="Mopac" data-toggle="popover" data-content="" class="list-group-item">Mountain Pacific Curling Association</a>
+          <a id="Nodak" data-toggle="popover" data-content="" class="list-group-item">North Dakota Curling Association</a>
+          <a id="WashCurling" data-toggle="popover" data-content="" class="list-group-item">Washington Curling Association</a>
+          <a id="WiscCurling" data-toggle="popover" data-content="" class="list-group-item">Wisconsin Curling Association</a>
         </ul>
       </div>
+
         <div class="panel-heading">
           <h4 class="panel-title">
               <a data-toggle="collapse"href="#collapse2">States</a>
@@ -55,147 +56,87 @@
           </div>
           <div id="collapse2" class="panel-collapse collapse">
             <ul class="list-group">
-              <a class="list-group-item" href="#">Alaska</a>
-              <a class="list-group-item" href="#">Arizona</a>
-              <a class="list-group-item" href="#">California</a>
-              <a class="list-group-item" href="#">Colorado</a>
-              <a class="list-group-item" href="#">Connecticut</a>
-              <a class="list-group-item" href="#">Florida</a>
-              <a class="list-group-item" href="#">Georgia</a>
-              <a class="list-group-item" href="#">Hawaii</a>
-              <a class="list-group-item" href="#">Idaho</a>
-              <a class="list-group-item" href="#">Illinois</a>
-              <a class="list-group-item" href="#">Indiana</a>
-              <a class="list-group-item" href="#">Iowa</a>
-              <a class="list-group-item" href="#">Maine</a>
-              <a class="list-group-item" href="#">Maryland</a>
-              <a class="list-group-item" href="#">Massachusetts</a>
-              <a class="list-group-item" href="#">Michigan</a>
-              <a class="list-group-item" href="#">Minnesota</a>
-              <a class="list-group-item" href="#">Mississippi</a>
-              <a class="list-group-item" href="#">Missouri</a>
-              <a class="list-group-item" href="#">Montana</a>
-              <a class="list-group-item" href="#">Nebraska</a>
-              <a class="list-group-item" href="#">Nevada</a>
-              <a class="list-group-item" href="#">New Hampshire</a>
-              <a class="list-group-item" href="#">New Jersey</a>
-              <a class="list-group-item" href="#">New York</a>
-              <a class="list-group-item" href="#">North Carolina</a>
-              <a class="list-group-item" href="#">North Dakota</a>
-              <a class="list-group-item" href="#">Ohio</a>
-              <a class="list-group-item" href="#">Oklahoma</a>
-              <a class="list-group-item" href="#">Oregon</a>
-              <a class="list-group-item" href="#">Pennsylvania</a>
-              <a class="list-group-item" href="#">Rhode Island</a>
-              <a class="list-group-item" href="#">South Carolina</a>
-              <a class="list-group-item" href="#">South Dakota</a>
-              <a class="list-group-item" href="#">Tennessee</a>
-              <a class="list-group-item" href="#">Texas</a>
-              <a class="list-group-item" href="#">Utah</a>
-              <a class="list-group-item" href="#">Vermont</a>
-              <a class="list-group-item" href="#">Virginia</a>
-              <a class="list-group-item" href="#">Washington</a>
-              <a class="list-group-item" href="#">Wisconsin</a>
-              <a class="list-group-item" href="#">Wyoming</a>
+              <a id="Alaska" class="list-group-item" href="#">Alaska</a>
+              <a id="Arizona" class="list-group-item" href="#">Arizona</a>
+              <a id="California" class="list-group-item" href="#">California</a>
+              <a id="Colorado" class="list-group-item" href="#">Colorado</a>
+              <a id="Connecticut" class="list-group-item" href="#">Connecticut</a>
+              <a id="Florida" class="list-group-item" href="#">Florida</a>
+              <a id="Georgia" class="list-group-item" href="#">Georgia</a>
+              <a id="Hawaii" class="list-group-item" href="#">Hawaii</a>
+              <a id="Idaho" class="list-group-item" href="#">Idaho</a>
+              <a id="Illinois" class="list-group-item" href="#">Illinois</a>
+              <a id="Indiana" class="list-group-item" href="#">Indiana</a>
+              <a id="Iowa" class="list-group-item" href="#">Iowa</a>
+              <a id="Maine" class="list-group-item" href="#">Maine</a>
+              <a id="Maryland" class="list-group-item" href="#">Maryland</a>
+              <a id="Massachusetts" class="list-group-item" href="#">Massachusetts</a>
+              <a id="Michigan" class="list-group-item" href="#">Michigan</a>
+              <a id="Minnesota" class="list-group-item" href="#">Minnesota</a>
+              <a id="Mississippi" class="list-group-item" href="#">Mississippi</a>
+              <a id="Missouri" class="list-group-item" href="#">Missouri</a>
+              <a id="Montana" class="list-group-item" href="#">Montana</a>
+              <a id="Nebraska" class="list-group-item" href="#">Nebraska</a>
+              <a id="Nevada" class="list-group-item" href="#">Nevada</a>
+              <a id="New Hampshire" class="list-group-item" href="#">New Hampshire</a>
+              <a id="NewJersey" class="list-group-item" href="#">New Jersey</a>
+              <a id="NewYork" class="list-group-item" href="#">New York</a>
+              <a id="NorthCarolina" class="list-group-item" href="#">North Carolina</a>
+              <a id="NorthDakota" class="list-group-item" href="#">North Dakota</a>
+              <a id="Ohio" class="list-group-item" href="#">Ohio</a>
+              <a id="Oklahoma" class="list-group-item" href="#">Oklahoma</a>
+              <a id="Oregon" class="list-group-item" href="#">Oregon</a>
+              <a id="Pennsylvania" class="list-group-item" href="#">Pennsylvania</a>
+              <a id="RhodeIsland" class="list-group-item" href="#">Rhode Island</a>
+              <a id="SouthCarolina" class="list-group-item" href="#">South Carolina</a>
+              <a id="SouthDakota" class="list-group-item" href="#">South Dakota</a>
+              <a id="Tennessee" class="list-group-item" href="#">Tennessee</a>
+              <a id="Texas" class="list-group-item" href="#">Texas</a>
+              <a id="Utah" class="list-group-item" href="#">Utah</a>
+              <a id="Vermont" class="list-group-item" href="#">Vermont</a>
+              <a id="Virginia" class="list-group-item" href="#">Virginia</a>
+              <a id="Washington" class="list-group-item" href="#">Washington</a>
+              <a id="Wisconsin" class="list-group-item" href="#">Wisconsin</a>
+              <a id="Wyoming" class="list-group-item" href="#">Wyoming</a>
             </ul>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
 
-<div id="map" class="col-md-offset-2 col-md-10"></div>
+<div id="map" class="col-md-10">
 
-    <!-- include cartodb.js library -->
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 
-    <script>
-      function main() {
-        cartodb.createVis('map', 'https://hostx009.cartodb.com/api/v2/viz/b6f522a4-6784-11e5-beb1-0e98b61680bf/viz.json', {
-            shareable: true,
-            title: true,
-            description: true,
-            search: true,
-            tiles_loader: true,
-            center_lat: 40,
-            center_lon: -100,
-            zoom: 4
-        })
-        .done(function(vis, layers) {
-          // layer 0 is the base layer, layer 1 is cartodb layer
-          // setInteraction is disabled by default
-          layers[1].setInteraction(true);
-          layers[1].on('featureOver', function(e, latlng, pos, data) {
-            cartodb.log.log(e, latlng, pos, data);
-          });
-          // you can get the native map to work with it
-          var map = vis.getNativeMap();
-          // now, perform any operations you need
-          // map.setZoom(3);
-          // map.panTo([50.5, 30.5]);
-          $("#AlaskaCurling").click(function(){
-            map.panTo([65,220]);
-            map.setZoom(4);
-          });
+  <div class='cartodb-legend category'>
+  <div class="legend-title">Member Region</div>
 
-          $("#At-Large").click(function(){
-            map.panTo([40,260]);
-            map.setZoom(4);
-          });
+  <ul>
+  	<li><div id="AlaskaCurling" class="bullet" style="background: #6B0FB2"></div> Alaska Curling Association</li>
+  	<li><div id="At-Large" class="bullet" style="background: #A6CEE3"></div> Colorado Curling Association</li>
+  	<li><div id="ColCurling" class="bullet" style="background: #B2DF8A"></div> Grand National Curling Club</li>
+  	<li><div id="GNCC" class="bullet" style="background: #33A02C"></div> Great Lakes Curling Association</li>
+  	<li><div id="IllinoisCurling" class="bullet" style="background: #FFCC00"></div> Illinois Curling Association</li>
+  	<li><div id="MidAmerica" class="bullet" style="background: #fb9a99"></div> Mid America</li>
+  	<li><div id="MinnCurling" class="bullet" style="background: #3E7BB6"></div> Minnesota Curling Association</li>
+  	<li><div id="Mopac" class="bullet" style="background: #FF7F00"></div> Mountain Pacific Curling Association</li>
+  	<li><div id="Nodak" class="bullet" style="background: #CAB2D6"></div> North Dakota Curling Association</li>
+  	<li><div id="WashCurling" class="bullet" style="background: #6A3D9A"></div> Washington Curling Association</li>
+  	<li><div id="WiscCurling" class="bullet" style="background: #F11810"></div> Wisconsin Curling Association</li>
+  	<li><div class="bullet" style="background: #aaadaf"></div> Forming</li>
+  	<li><div class="bullet" style="background: #000000"></div> Others</li>
+  </ul>
+  </div>
+</div>
 
-          $("#ColCurling").click(function(){
-            map.panTo([42,255]);
-            map.setZoom(6);
-          });
 
-          $("#GNCC").click(function(){
-            map.panTo([38,290]);
-            map.setZoom(5);
-          });
-
-          $("#IllinoisCurling").click(function(){
-            map.panTo([41,270]);
-            map.setZoom(7);
-          });
-
-          $("#MidAmerica").click(function(){
-            map.panTo([35,265]);
-            map.setZoom(5);
-          });
-
-          $("#MinnCurling").click(function(){
-            map.panTo([46.5,265]);
-            map.setZoom(7);
-          });
-
-          $("#Mopac").click(function(){
-            map.panTo([41,240]);
-            map.setZoom(5);
-          });
-
-          $("#Nodak").click(function(){
-            map.panTo([46.5,260]);
-            map.setZoom(7);
-          });
-
-          $("#WashCurling").click(function(){
-            map.panTo([47.7,240]);
-            map.setZoom(7);
-          });
-
-          $("#WiscCurling").click(function(){
-            map.panTo([45,270]);
-            map.setZoom(7);
-          });
-
-        })
-        .error(function(err) {
-          console.log(err);
-        });
-      }
-      window.onload = main;
-    </script>
-
+<script src="USAcurlingclubs.js"></script>
+<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 
 </body>
 </html>
